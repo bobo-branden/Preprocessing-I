@@ -139,11 +139,20 @@ table {
 * {
 	box-sizing: border-box;
 }
+@color: lightblue;
+.flex-around(){
+	display: flex;
+	justify-content: space-around;
+}
+.flex-center(){
+	display: flex;
+	justify-content: center;
+}
 
 html,
 body {
 	height: 95vh;
-	background: lightblue;
+	background: @color;
 	//rgba(0, 0, 0, 1);
 }
 h1{
@@ -153,10 +162,8 @@ h1{
 	
 	height: 7vh;
 }
-.content{
-	
-	display: flex;
-	justify-content: center;
+.content{	
+	.flex-center();
 	margin: 0 3%;
 	border: 4px outset lightgray;
 	height: 85vh;
@@ -177,8 +184,7 @@ h1{
 		}
 	}
 	nav{
-		display: flex;
-		justify-content: space-around;
+		.flex-around();
 		flex-direction: column;	
 		text-align: center;		
 		height: 60vh;		
@@ -260,8 +266,7 @@ h1{
 	border-bottom: 1px solid #000;
 }
 .page{
-	display: flex;
-	justify-content: center;
+	.flex-center();
 	margin: 0 auto;
 	font-size: larger;
 	font-weight: bolder;
