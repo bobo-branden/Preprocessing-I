@@ -139,21 +139,11 @@ table {
 * {
 	box-sizing: border-box;
 }
-@color: lightblue;
-.flex-around(){
-	display: flex;
-	justify-content: space-around;
-}
-.flex-center(){
-	display: flex;
-	justify-content: center;
-}
 
 html,
 body {
 	height: 95vh;
-	background: @color;
-	//rgba(0, 0, 0, 1);
+	background: lightblue;
 }
 h1{
 	margin: 2% auto 0 auto;
@@ -162,65 +152,31 @@ h1{
 	
 	height: 7vh;
 }
-.content{	
-	.flex-center();
+.content{
+	
+	display: flex;
+	justify-content: center;
 	margin: 0 3%;
 	border: 4px outset lightgray;
 	height: 85vh;
 	min-height: 550px;
 	
-	@media(max-width: 800px){
-		flex-direction: column;
-		align-items: center;
-	}
-
 	.side-bar{
 		background: lightskyblue;
 		width: 25%;
-
-		@media(max-width: 800px){
-			width: 100%;
-			
-		}
 	}
 	nav{
-		.flex-around();
+		display: flex;
+		justify-content: space-around;
 		flex-direction: column;	
 		text-align: center;		
 		height: 60vh;		
 		
 		min-width: 250px;
 		
-		@media(max-width: 800px){
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: center;
-			height: 10vh;
-		}
-
 		a p{
 			font-size: 1.75rem;
 		}		
-	}
-	.info{
-		display: flex;
-		flex-direction: column;
-		p{
-			padding: 1rem ;
-		}
-		@media(max-width: 800px){
-			flex-direction: row;
-			justify-content: space-around;
-		}
-		@media(max-width: 450px){
-			display: none;
-		}
-	}
-	.c-info{
-		@media(max-width: 450px){
-			display: flex ;
-			justify-content: space-around;
-		}
 	}
 	.main-content{
 		width:75% ;
@@ -229,12 +185,7 @@ h1{
 			display: none;
 		  }
 		-ms-overflow-style: none;
-		
-		@media(max-width: 800px){
-			width: 100%;
-			
-		}
-		
+		background: whitesmoke;
 		.page{
 			display: flex;
 			justify-content: center;
@@ -242,34 +193,26 @@ h1{
 			
 		}
 		section{
-			
 			margin: 1.5% 2%;
 			width: 39%;
 			padding: 3%;
 			border: thick inset darkgrey;
 			border-radius: 5%;
-
-			@media(max-width: 800px){
-				width: 100%;
-				
-			}
 		}
 	}
 }
 
 
 .page p {
-	display: flex;
 	width: 85%;
 	margin: 0 auto;
 	padding: 2% 0;
 	border-bottom: 1px solid #000;
 }
 .page{
-	.flex-center();
-	margin: 0 auto;
-	font-size: larger;
-	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	margin: 2% auto;
 	.page-title{
 		width: 100%;
 		
@@ -278,10 +221,6 @@ h1{
 		text-align: center;
 		font-size: 2rem;
 	}
-	img{
-		width: 20%;
-		height: auto;
-	}
 	
 	.contact{
 		display: flex;
@@ -289,7 +228,7 @@ h1{
 		justify-content: space-evenly;
 		align-items: center;
 		*{
-			margin: 3% auto;
+			margin: 2% auto;
 		}
 		section{
 			width: fit-content;
@@ -323,62 +262,6 @@ h1{
 	
 	
 }
-.wrapper{
-	background-color: rgba(0, 0, 0, 0);
-	opacity: 1;
-}
 #about {
-	//background-color: darkblue;
-	color: white;
-	background-image: url("../img/artificial-intelligence-3382507_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
+	background-image: url("artificial-intelligence-3382507_640.jpg");
 }
-#skills {
-	//background-color: darkblue;
-	
-	background-image: url("../img/school-4279290_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-#work {
-	//background-color: darkblue;
-	
-	background-image: url("../img/multi-tasking-2840792_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-#contact {
-	//background-color: darkblue;
-	
-	background-image: url("../img/binary-1695475_640.jpg");
-	color: white;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-//.main-content{background-color: rgba(0, 0, 0, 0);}
-

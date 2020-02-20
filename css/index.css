@@ -1,1 +1,348 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 95vh;
+  background: lightblue;
+}
+h1 {
+  margin: 2% auto 0 auto;
+  text-align: center;
+  font-size: 2.2rem;
+  height: 7vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0 3%;
+  border: 4px outset lightgray;
+  height: 85vh;
+  min-height: 550px;
+}
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content .side-bar {
+  background: lightskyblue;
+  width: 25%;
+}
+@media (max-width: 800px) {
+  .content .side-bar {
+    width: 100%;
+  }
+}
+.content nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  height: 60vh;
+  min-width: 250px;
+}
+@media (max-width: 800px) {
+  .content nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+}
+.content nav a p {
+  font-size: 1.75rem;
+}
+.content .info {
+  display: flex;
+  flex-direction: column;
+}
+.content .info p {
+  padding: 1rem ;
+}
+@media (max-width: 800px) {
+  .content .info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 450px) {
+  .content .info {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .content .c-info {
+    display: flex ;
+    justify-content: space-around;
+  }
+}
+.content .main-content {
+  width: 75% ;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+}
+.content .main-content::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .content .main-content {
+    width: 100%;
+  }
+}
+.content .main-content .page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content .main-content section {
+  margin: 1.5% 2%;
+  width: 39%;
+  padding: 3%;
+  border: thick inset darkgrey;
+  border-radius: 5%;
+}
+@media (max-width: 800px) {
+  .content .main-content section {
+    width: 100%;
+  }
+}
+.page p {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2% 0;
+  border-bottom: 1px solid #000;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: larger;
+  font-weight: bolder;
+}
+.page .page-title {
+  width: 100%;
+}
+.page h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.page img {
+  width: 20%;
+  height: auto;
+}
+.page .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page .contact * {
+  margin: 3% auto;
+}
+.page .contact section {
+  width: fit-content;
+  height: fit-content;
+}
+.page .contact .btns {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.page .contact .name-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 85%;
+}
+.page .contact .input-msg,
+.page .contact .input-name,
+.page .contact .input-email {
+  margin: 0 auto;
+  width: 85%;
+}
+.page .contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+#about {
+  color: white;
+  background-image: url("../img/artificial-intelligence-3382507_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+  background-position: right top;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#skills {
+  background-image: url("../img/school-4279290_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+  background-position: right top;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#work {
+  background-image: url("../img/multi-tasking-2840792_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+  background-position: right top;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#contact {
+  background-image: url("../img/binary-1695475_640.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+  background-position: right top;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
