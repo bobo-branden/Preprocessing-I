@@ -162,9 +162,19 @@ h1{
 	height: 85vh;
 	min-height: 550px;
 	
+	@media(max-width: 800px){
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.side-bar{
 		background: lightskyblue;
 		width: 25%;
+
+		@media(max-width: 800px){
+			width: 90%;
+			
+		}
 	}
 	nav{
 		display: flex;
@@ -175,6 +185,12 @@ h1{
 		
 		min-width: 250px;
 		
+		@media(max-width: 800px){
+			flex-direction: row;
+			justify-content: space-around;
+			height: 15vh;
+		}
+
 		a p{
 			font-size: 1.75rem;
 		}		
@@ -187,6 +203,10 @@ h1{
 		  }
 		-ms-overflow-style: none;
 		
+		@media(max-width: 800px){
+			width: 90%;
+			
+		}
 		
 		.page{
 			display: flex;
@@ -201,6 +221,11 @@ h1{
 			padding: 3%;
 			border: thick inset darkgrey;
 			border-radius: 5%;
+
+			@media(max-width: 800px){
+				width: 90%;
+				
+			}
 		}
 	}
 }
@@ -286,8 +311,8 @@ h1{
 	//background-color: black;
 	background-position: right top;
 	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
+	
+	height: 100% !important;
 }
 #skills {
 	//background-color: darkblue;

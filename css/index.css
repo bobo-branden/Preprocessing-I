@@ -149,9 +149,20 @@ h1 {
   height: 85vh;
   min-height: 550px;
 }
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .content .side-bar {
   background: lightskyblue;
   width: 25%;
+}
+@media (max-width: 800px) {
+  .content .side-bar {
+    width: 90%;
+  }
 }
 .content nav {
   display: flex;
@@ -160,6 +171,13 @@ h1 {
   text-align: center;
   height: 60vh;
   min-width: 250px;
+}
+@media (max-width: 800px) {
+  .content nav {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 15vh;
+  }
 }
 .content nav a p {
   font-size: 1.75rem;
@@ -172,6 +190,11 @@ h1 {
 .content .main-content::-webkit-scrollbar {
   display: none;
 }
+@media (max-width: 800px) {
+  .content .main-content {
+    width: 90%;
+  }
+}
 .content .main-content .page {
   display: flex;
   justify-content: center;
@@ -183,6 +206,11 @@ h1 {
   padding: 3%;
   border: thick inset darkgrey;
   border-radius: 5%;
+}
+@media (max-width: 800px) {
+  .content .main-content section {
+    width: 90%;
+  }
 }
 .page p {
   display: flex;
@@ -259,8 +287,7 @@ h1 {
   font-weight: bolder;
   background-position: right top;
   background-attachment: fixed;
-  width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 #skills {
   background-image: url("../img/school-4279290_640.jpg");
