@@ -185,15 +185,6 @@ h1 {
   border: thick inset darkgrey;
   border-radius: 5%;
 }
-.name-email {
-  display: flex;
-  justify-content: space-evenly;
-  width: 85%;
-}
-.input-msg {
-  margin: 0 auto;
-  width: 85%;
-}
 .page p {
   width: 85%;
   margin: 0 auto;
@@ -212,15 +203,41 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
-.page .btns {
-  display: flex;
-  justify-content: center;
-}
 .page .contact {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
-.page form {
+.page .contact * {
+  margin: 2% auto;
+}
+.page .contact section {
+  width: fit-content;
+  height: fit-content;
+}
+.page .contact .btns {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.page .contact .name-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 85%;
+}
+.page .contact .input-msg,
+.page .contact .input-name,
+.page .contact .input-email {
+  margin: 0 auto;
+  width: 85%;
+}
+.page .contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
