@@ -144,7 +144,6 @@ html,
 body {
 	height: 95vh;
 	background: lightblue;
-	//rgba(0, 0, 0, 1);
 }
 h1{
 	margin: 2% auto 0 auto;
@@ -186,8 +185,7 @@ h1{
 			display: none;
 		  }
 		-ms-overflow-style: none;
-		
-		
+		background: whitesmoke;
 		.page{
 			display: flex;
 			justify-content: center;
@@ -195,7 +193,6 @@ h1{
 			
 		}
 		section{
-			
 			margin: 1.5% 2%;
 			width: 39%;
 			padding: 3%;
@@ -207,7 +204,6 @@ h1{
 
 
 .page p {
-	display: flex;
 	width: 85%;
 	margin: 0 auto;
 	padding: 2% 0;
@@ -216,9 +212,7 @@ h1{
 .page{
 	display: flex;
 	justify-content: center;
-	margin: 0 auto;
-	font-size: larger;
-	font-weight: bolder;
+	margin: 2% auto;
 	.page-title{
 		width: 100%;
 		
@@ -227,10 +221,6 @@ h1{
 		text-align: center;
 		font-size: 2rem;
 	}
-	img{
-		width: 20%;
-		height: auto;
-	}
 	
 	.contact{
 		display: flex;
@@ -238,7 +228,7 @@ h1{
 		justify-content: space-evenly;
 		align-items: center;
 		*{
-			margin: 3% auto;
+			margin: 2% auto;
 		}
 		section{
 			width: fit-content;
@@ -272,62 +262,6 @@ h1{
 	
 	
 }
-.wrapper{
-	background-color: rgba(0, 0, 0, 0);
-	opacity: 1;
-}
 #about {
-	//background-color: darkblue;
-	color: white;
-	background-image: url("../img/artificial-intelligence-3382507_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
+	background-image: url("artificial-intelligence-3382507_640.jpg");
 }
-#skills {
-	//background-color: darkblue;
-	
-	background-image: url("../img/school-4279290_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-#work {
-	//background-color: darkblue;
-	
-	background-image: url("../img/multi-tasking-2840792_640.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-#contact {
-	//background-color: darkblue;
-	
-	background-image: url("../img/binary-1695475_640.jpg");
-	color: white;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-weight: bolder;
-	//background-color: black;
-	background-position: right top;
-	  background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-}
-//.main-content{background-color: rgba(0, 0, 0, 0);}
-
